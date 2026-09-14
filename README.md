@@ -33,15 +33,20 @@ Deploy your own live instance of the GhostGram web portal to Vercel with one cli
 
 ## 🖥️ How To Use (Desktop)
 
-1. Open your deployed **GhostGram** web portal or the live landing page.
-2. Click **Copy Code Snippet** (or drag the **Bookmarklet** to your bookmarks bar).
-3. Open [instagram.com](https://www.instagram.com) and make sure you are logged into your account.
-4. Open your browser developer console:
-   - **Windows / Linux:** `Ctrl + Shift + J` (Chrome) or `F12`
+### 1. Get the Code Snippet
+Choose either option to copy the script:
+* **Option A (Web Portal):** Open the [GhostGram Web Portal](https://shivvx.github.io/instagram-unfollower/) and click **Copy Code Snippet**.
+* **Option B (Direct Raw File):** Open **[ghostgram.min.js](https://raw.githubusercontent.com/shivvx/instagram-unfollower/main/ghostgram.min.js)**, select all (`Cmd + A` / `Ctrl + A`), and copy.
+
+### 2. Run It on Instagram
+1. Open [instagram.com](https://www.instagram.com) in your browser and make sure you are logged in.
+2. Open your browser developer console:
+   - **Windows / Linux:** `Ctrl + Shift + J` or `F12`
    - **macOS:** `Cmd + Option + I`
-5. Paste the snippet into the Console tab and hit `Enter`.
-6. Click **Start Account Scan** on the GhostGram interface.
-7. Tag any accounts you wish to protect with the star (★), review non-followers, and unfollow selected users with safe pacing.
+   *(If your browser displays a paste warning, type `allow pasting` and press Enter).*
+3. Paste the code into the Console prompt and press **`Enter`**.
+4. The **GhostGram** dashboard will instantly mount on your screen!
+5. Click **Start Account Scan** to begin detecting accounts that don't follow you back.
 
 ---
 
