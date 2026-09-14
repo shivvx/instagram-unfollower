@@ -1,0 +1,23 @@
+{
+  "name": "instagram-unfollower",
+  "version": "2.0.0",
+  "description": "GhostGram • Next-Gen Instagram Follower Intelligence - Official Web Portal",
+  "author": "Shivvx | wiroxa.dev",
+  "homepage": "https://wiroxa.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivvx/instagram-unfollower.git"
+  },
+  "keywords": [
+    "instagram",
+    "unfollowers",
+    "audit",
+    "ghostgram",
+    "follower-tracker",
+    "privacy-first"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
