@@ -56,8 +56,14 @@ Press the shortcut key for your browser:
 Copy and paste this single line into the console and press <kbd>Enter</kbd> ↵:
 
 ```javascript
-fetch('https://instagram-unfollower.vercel.app/ghostgram.min.js').then(r=>r.text()).then(eval)
+fetch('https://raw.githubusercontent.com/shivvx/instagram-unfollower/main/ghostgram.min.js').then(r=>r.text()).then(eval)
 ```
+
+> [!TIP]
+> **CDN Alternative:** You can also run via jsDelivr CDN:
+> ```javascript
+> fetch('https://cdn.jsdelivr.net/gh/shivvx/instagram-unfollower@main/ghostgram.min.js').then(r=>r.text()).then(eval)
+> ```
 
 The sleek obsidian glass dashboard will mount directly over Instagram!
 
@@ -132,7 +138,7 @@ You can run GhostGram on mobile using any browser that supports a developer cons
 3. Tap the floating **Eruda** console button to open developer tools.
 4. Paste the snippet into the console:
    ```javascript
-   fetch('https://instagram-unfollower.vercel.app/ghostgram.min.js').then(r=>r.text()).then(eval)
+   fetch('https://raw.githubusercontent.com/shivvx/instagram-unfollower/main/ghostgram.min.js').then(r=>r.text()).then(eval)
    ```
 5. Press **Enter** to launch the GhostGram dashboard.
 

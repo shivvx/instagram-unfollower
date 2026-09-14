@@ -91,12 +91,12 @@
     <text x="0" y="0" fill="#38bdf8" font-size="14" font-weight="800" class="mono-text">❯</text>
 
     <!-- Full, clean un-overlapping command text -->
-    <text x="20" y="0" fill="#f8fafc" font-size="12.5" font-weight="500" class="mono-text">
-      fetch('<tspan fill="#38bdf8">https://instagram-unfollower.vercel.app/ghostgram.min.js</tspan>').then(r=&gt;r.text()).then(eval)
+    <text x="20" y="0" fill="#f8fafc" font-size="11.5" font-weight="500" class="mono-text">
+      fetch('<tspan fill="#38bdf8">https://raw.githubusercontent.com/shivvx/instagram-unfollower/main/ghostgram.min.js</tspan>').then(r=&gt;r.text()).then(eval)
     </text>
 
     <!-- Blinking cursor placed AT THE END of command -->
-    <rect x="714" y="-12" width="7" height="15" rx="1.5" fill="#818cf8" class="cursor" />
+    <rect x="796" y="-12" width="7" height="15" rx="1.5" fill="#818cf8" class="cursor" />
   </g>
 
   <!-- Execution Output Line 1 (Engine Load) -->
