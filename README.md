@@ -6,8 +6,8 @@
 [![Studio](https://img.shields.io/badge/Studio-wiroxa.dev-10b981?style=for-the-badge)](https://wiroxa.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber?style=for-the-badge)](LICENSE)
 
-> ⚡ **GhostGram** is an ultra-fast, 100% client-side Instagram relationship analyzer and follower audit engine.  
-> Detect non-followers, mutuals, and inactive accounts directly in your browser without sharing passwords, installing third-party apps, or risking your account.
+> ⚡ **GhostGram** is an ultra-fast, 100% client-side Instagram follower analyzer & relationship audit engine.  
+> Detect non-followers, mutuals, and inactive accounts directly in your browser without password sharing, third-party app installations, or account action blocks. Built with precision by **Shivvx** | **[wiroxa.dev](https://wiroxa.dev)**.
 
 ---
 
