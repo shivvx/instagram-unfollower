@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "GhostGram — Instagram Unfollowers & Follower Intelligence",
+  "short_name": "GhostGram",
+  "version": "2.0.0",
+  "description": "Ultra-fast, 100% client-side Instagram relationship analyzer. Detect non-followers, mutuals, and inactive accounts in a native side tab.",
+  "author": "Shivvx | wiroxa.dev",
+  "homepage_url": "https://wiroxa.dev",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "cookies",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.instagram.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open GhostGram Follower Intelligence",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

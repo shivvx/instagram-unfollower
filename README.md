@@ -24,6 +24,7 @@
 
 | Resource | What it is | Direct Link |
 | :--- | :--- | :--- |
+| 🧩 **Chrome Extension** | Native Chrome Side Panel — 1-click install | [**Download `ghostgram-extension.zip`**](https://raw.githubusercontent.com/shivvx/instagram-unfollower/main/ghostgram-extension.zip) |
 | 🌐 **Interactive Guide** | Step-by-step interactive web guide with 1-click clipboard copy | [**shivvx.in/instagram-unfollower**](https://www.shivvx.in/instagram-unfollower) |
 | ⚡ **Vercel Web Portal** | Hosted mirror with bookmarklet drag & raw snippet | [**instagram-unfollower.vercel.app**](https://instagram-unfollower.vercel.app) |
 | 📦 **Minified Script** | Direct raw production file for offline inspection | [`ghostgram.min.js`](https://raw.githubusercontent.com/shivvx/instagram-unfollower/main/ghostgram.min.js) |
@@ -32,7 +33,21 @@
 
 ---
 
-## ⚡ 10-Second Quickstart
+## ⚡ Choose Your Favorite Setup
+
+### 🧩 Option 1: Chrome Extension (Recommended — Easiest & Best Experience)
+
+GhostGram runs right inside Chrome's native **Side Panel** alongside Instagram with zero console commands required!
+
+1. **Download:** [**Download `ghostgram-extension.zip`**](https://raw.githubusercontent.com/shivvx/instagram-unfollower/main/ghostgram-extension.zip) (or from [shivvx.in/instagram-unfollower](https://www.shivvx.in/instagram-unfollower)).
+2. **Unzip:** Extract the downloaded `.zip` file on your computer.
+3. **Open Extensions:** In Chrome, navigate to `chrome://extensions/` and toggle **"Developer mode"** (top right).
+4. **Load Unpacked:** Click **"Load unpacked"** in the top left, and choose the unzipped folder.
+5. **Open & Enjoy:** Go to **[instagram.com](https://www.instagram.com)** and click the GhostGram icon in your browser toolbar to open the Side Panel!
+
+---
+
+### 💻 Option 2: Browser Console (Zero-Install, 10 Seconds)
 
 <div align="center">
   <img src="assets/steps-diagram.svg" alt="How GhostGram Works in 4 Steps" width="100%" />
@@ -40,10 +55,10 @@
 
 <br />
 
-### Step 1: Open Instagram
+#### Step 1: Open Instagram
 Open your browser, go to **[instagram.com](https://www.instagram.com)**, and make sure you are logged in to your account.
 
-### Step 2: Open Browser Console
+#### Step 2: Open Browser Console
 Press the shortcut key for your browser:
 * **Mac:** Press <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> (or <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>J</kbd>)
 * **Windows / Linux:** Press <kbd>F12</kbd> (or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd>)
@@ -52,7 +67,7 @@ Press the shortcut key for your browser:
 > [!NOTE]
 > If your browser shows a warning like *"Warning: Don't paste code you don't understand"*, simply type `allow pasting` and press <kbd>Enter</kbd> first.
 
-### Step 3: Paste & Run
+#### Step 3: Paste & Run
 Copy and paste this single line into the console and press <kbd>Enter</kbd> ↵:
 
 ```javascript
