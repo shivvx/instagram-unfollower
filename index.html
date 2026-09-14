@@ -203,6 +203,171 @@
       transform: translateY(-2px);
     }
 
+    /* Extension Download Button & Section */
+    .download-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 1.1rem 2.2rem;
+      background: linear-gradient(135deg, #a855f7 0%, #6366f1 50%, #38bdf8 100%);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 14px;
+      color: #ffffff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      font-family: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 12px 35px rgba(99, 102, 241, 0.45);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .download-hero-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 45px rgba(168, 85, 247, 0.6);
+      color: #ffffff;
+    }
+
+    .download-hero-btn:active {
+      transform: translateY(0);
+    }
+
+    .download-hero-btn.download-compact {
+      padding: 0.85rem 1.6rem;
+      font-size: 0.95rem;
+      border-radius: 12px;
+    }
+
+    .badge-v2 {
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 2px 7px;
+      background: rgba(255, 255, 255, 0.22);
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-ext-subnote {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px 16px;
+      margin-top: -1.8rem;
+      margin-bottom: 2.8rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .ext-guide-link {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px dashed rgba(56, 189, 248, 0.5);
+      transition: color 0.15s ease;
+    }
+
+    .ext-guide-link:hover {
+      color: #7dd3fc;
+      border-bottom-style: solid;
+    }
+
+    .extension-section {
+      padding: 2rem 1.5rem 5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .ext-box-card {
+      background: rgba(18, 21, 35, 0.8);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 2.2rem;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    .ext-card-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .ext-icon-title {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      max-width: 520px;
+    }
+
+    .ext-icon-bubble {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(99, 102, 241, 0.25));
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c084fc;
+      flex-shrink: 0;
+    }
+
+    .ext-main-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #f8fafc;
+      margin: 0 0 4px 0;
+    }
+
+    .ext-main-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .ext-download-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.5rem;
+    }
+
+    .ext-mirror-link {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.15s ease;
+    }
+
+    .ext-mirror-link:hover {
+      color: #38bdf8;
+    }
+
+    @media (max-width: 768px) {
+      .ext-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .ext-download-actions {
+        align-items: flex-start;
+        width: 100%;
+      }
+      .ext-download-actions .download-hero-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
     /* Terminal Code Preview */
     .terminal-container {
       width: 100%;
@@ -510,20 +675,38 @@
     </p>
 
     <div class="cta-group">
+      <!-- Primary: Download Chrome Extension (v2.0) -->
+      <a id="download-ext-btn" class="download-hero-btn" href="ghostgram-extension.zip" download="ghostgram-extension.zip" onclick="handleExtDownload(event)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span id="download-ext-text">Download Chrome Extension</span>
+        <span class="badge-v2">v2.0</span>
+      </a>
+
+      <!-- Secondary: Copy Code Snippet -->
       <button class="copy-hero-btn" onclick="copySnippet()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
           <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
         </svg>
         <span>Copy Code Snippet</span>
       </button>
 
+      <!-- Tertiary: Drag Bookmarklet -->
       <a id="bookmarklet-link" class="bookmarklet-btn" href="#" title="Drag to your browser bookmarks bar">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
         </svg>
         <span>Drag as Bookmarklet</span>
       </a>
+    </div>
+
+    <div class="hero-ext-subnote">
+      <span>📦 Native Chrome Extension (.zip) &bull; Manifest V3 Side Panel &bull; Zero Console Commands</span>
+      <a href="#extension-setup" class="ext-guide-link">30-Second Setup Guide &darr;</a>
     </div>
 
     <!-- Terminal Code Box -->
@@ -545,6 +728,64 @@
       </div>
     </div>
   </header>
+
+  <!-- Chrome Extension Setup Section -->
+  <section class="extension-section" id="extension-setup">
+    <div class="section-header">
+      <div class="section-eyebrow">Recommended Experience</div>
+      <h2 class="section-title">Install Chrome Extension in 30 Seconds</h2>
+      <p class="hero-p" style="margin: 0.5rem auto 2rem; max-width: 620px;">Experience GhostGram as a native side panel docked right beside your Instagram tab. No copying code, no console tinkering.</p>
+    </div>
+
+    <div class="ext-box-card">
+      <div class="ext-card-header">
+        <div class="ext-icon-title">
+          <div class="ext-icon-bubble">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </div>
+          <div>
+            <h3 class="ext-main-title">GhostGram Side Panel Extension (MV3)</h3>
+            <p class="ext-main-desc">Slides in beside Instagram with instant session sync, whitelist protection, and anti-detection pacing.</p>
+          </div>
+        </div>
+        <div class="ext-download-actions">
+          <a class="download-hero-btn download-compact" href="ghostgram-extension.zip" download="ghostgram-extension.zip" onclick="handleExtDownload(event)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Extension (.zip)</span>
+          </a>
+          <a href="https://github.com/shivvx/instagram-unfollower/raw/main/ghostgram-extension.zip" target="_blank" rel="noopener noreferrer" class="ext-mirror-link">
+            Direct GitHub mirror (.zip) &nearr;
+          </a>
+        </div>
+      </div>
+
+      <div class="steps-grid" style="margin-top: 1.75rem;">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3 class="step-title">Download &amp; Extract</h3>
+          <p class="step-desc">Click the download button to grab <code>ghostgram-extension.zip</code> and unzip it to any folder on your computer.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3 class="step-title">Open chrome://extensions</h3>
+          <p class="step-desc">In Chrome or Brave, open <code>chrome://extensions</code> and switch <b>Developer mode</b> ON in the top-right.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3 class="step-title">Load Unpacked &amp; Run</h3>
+          <p class="step-desc">Click <b>"Load unpacked"</b>, select the unzipped <code>ghostgram-extension</code> folder, and click GhostGram on your toolbar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- How It Works Section -->
   <section class="steps-section">
@@ -682,6 +923,42 @@
         box.style.maxHeight = "none";
         overlay.style.display = "none";
       }
+    }
+
+    const GITHUB_EXT_RAW_URL = "https://github.com/shivvx/instagram-unfollower/raw/main/ghostgram-extension.zip";
+
+    function handleExtDownload(e) {
+      const btnText = document.getElementById("download-ext-text");
+      if (btnText) {
+        btnText.textContent = "Downloading Extension...";
+        setTimeout(() => {
+          btnText.textContent = "Download Chrome Extension";
+        }, 2500);
+      }
+      // If served via file:// protocol where relative downloads fail, route to GitHub raw release
+      if (window.location.protocol === "file:") {
+        if (e) e.preventDefault();
+        window.location.href = GITHUB_EXT_RAW_URL;
+      }
+    }
+
+    // Auto-verify if local ghostgram-extension.zip is available; if not, point directly to GitHub raw download
+    try {
+      fetch("ghostgram-extension.zip", { method: "HEAD" })
+        .then((res) => {
+          if (!res.ok) {
+            document.querySelectorAll("a[href='ghostgram-extension.zip']").forEach((a) => {
+              a.href = GITHUB_EXT_RAW_URL;
+            });
+          }
+        })
+        .catch(() => {
+          document.querySelectorAll("a[href='ghostgram-extension.zip']").forEach((a) => {
+            a.href = GITHUB_EXT_RAW_URL;
+          });
+        });
+    } catch (err) {
+      // Ignored for offline/restricted environments
     }
   </script>
 </body>
